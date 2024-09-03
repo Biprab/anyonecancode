@@ -90,13 +90,13 @@ jobs:
 
     steps:
       - name: Download build of static app
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: static-webapp
           path: dist
 
       - name: Download build of static website
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         if: github.repository_owner == 'microsoft'
         with:
           name: static-website
